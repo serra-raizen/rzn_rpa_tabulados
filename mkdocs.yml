@@ -1,0 +1,13 @@
+site_name: rzn_rpa_tabulados
+site_description: Biblioteca para manipulação de dados tabulados em automações RPA
+site_author: Thiago Serra
+repo_url: https://github.com/serra-raizen/rzn_rpa_tabulados
+repo_name: GitHub
+
+nav:
+  - Início: index.md
+  - Referência: referencia.md
+
+theme:
+  name: material
+  language: pt-BR

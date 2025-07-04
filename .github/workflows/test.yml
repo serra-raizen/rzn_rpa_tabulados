@@ -1,0 +1,25 @@
+name: Testes e Lint
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout do código
+      uses: actions/checkout@v3
+
+    - name: Instalar o Poetry
+      uses: abatilo/actions-poetry@v2
+      with:
+        poetry-version: "1.7.1"
+
+    - name: Instalar dependências
+      run: poetry install
+
+    - name: Rodar Lint
+      run: poetry run task lint
+
+    - name: Rodar Testes
+      run: poetry run task test

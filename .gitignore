@@ -1,0 +1,28 @@
+# Ambientes virtuais e arquivos Python compilados
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Pasta de ambiente virtual local
+.venv/
+
+# Arquivos do Poetry
+*.lock
+
+# Cobertura de testes
+htmlcov/
+.coverage*
+
+# Cache do pytest
+.cache/
+
+# Diretórios de build
+build/
+dist/
+*.egg-info/
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
